@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Net;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-using System.Web.Script.Serialization;
+using System.Web;
+using System.Runtime.Serialization.Json;
+
 
 
 namespace WindowsFormsApplication1
@@ -63,16 +63,21 @@ namespace WindowsFormsApplication1
                     //判断网络状态
                     if (wr.StatusCode == HttpStatusCode.OK)
                     {
+                        //内容转换为JSON字符串
                         Stream respStream = wr.GetResponseStream();
                         StreamReader respStreamReader = new StreamReader(respStream, Encoding.UTF8);
                         string strBuff = respStreamReader.ReadToEnd();
-                        JavaScriptSerializer Serializer = new JavaScriptSerializer();
-                        List<T> objs = Serializer.Deserialize<List<T>>(JsonStr);
+                        //处理JSON字符串
+                        Dictionary<String, String> pList = new Dictionary<String, String>();
+                        //JSON.parse<List<Dictionary<String, String>>>(strBuff);
 
 
 
-                        System.Console.WriteLine(respStream);
-                        MessageBox.Show(strBuff);
+
+
+
+                        System.Console.WriteLine(JSON.parse<List<Dictionary<String, String>>>(strBuff));
+                        //MessageBox.Show(strBuff);
 
                     }
 
@@ -87,11 +92,31 @@ namespace WindowsFormsApplication1
             catch (Exception exception) {
                 System.Console.WriteLine(exception.Message);
             }
-	
-
-                
 
 
         }
     }
+
+    //专门解析JSON的类
+    public static class JSON
+    {
+
+        public static T parse<T>(string jsonString)
+        {
+            using (var ms = new MemoryStream(Encoding.UTF8.GetBytes(jsonString)))
+            {
+                return (T)new DataContractJsonSerializer(typeof(T)).ReadObject(ms);
+            }
+        }
+
+        public static string stringify(object jsonObject)
+        {
+            using (var ms = new MemoryStream())
+            {
+                new DataContractJsonSerializer(jsonObject.GetType()).WriteObject(ms, jsonObject);
+                return Encoding.UTF8.GetString(ms.ToArray());
+            }
+        }
+    } 
+
 }
