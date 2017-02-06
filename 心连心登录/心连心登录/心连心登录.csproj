@@ -12,19 +12,19 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>\\Mac\Home\Desktop\</PublishUrl>
+    <PublishUrl>\\Mac\Home\Desktop\xlxSystem\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <InstallUrl>\\Mac\Home\Desktop\xlxSystem\</InstallUrl>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -91,10 +91,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录.cs">
+    <Compile Include="心连心登录.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录.Designer.cs">
+    <Compile Include="心连心登录.Designer.cs">
       <DependentUpon>心连心登录.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="operateForm.resx">
@@ -109,9 +109,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录.resx">
+    <EmbeddedResource Include="心连心登录.resx">
       <DependentUpon>心连心登录.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
