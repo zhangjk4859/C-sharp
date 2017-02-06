@@ -7,3 +7,7 @@
 \\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\obj\Debug\心连心登录.exe
 \\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\obj\Debug\心连心登录.pdb
 \\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\obj\Debug\心连心登录.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\bin\Debug\Newtonsoft.Json.dll
+\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\bin\Debug\Newtonsoft.Json.pdb
+\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\bin\Debug\Newtonsoft.Json.xml
+\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\obj\Debug\WindowsFormsApplication1.operateForm.resources

@@ -11,6 +11,10 @@ using System.IO;
 using System.Net;
 using System.Web;
 using System.Runtime.Serialization.Json;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Text.RegularExpressions;
+
 
 
 
@@ -18,6 +22,10 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        //存储sessionID  
+        public static string sessionID;
+        public static string xlxName;
+        public static string xlxPassword;
         public Form1()
         {
             InitializeComponent();
@@ -28,15 +36,17 @@ namespace WindowsFormsApplication1
             //拿到textbox的值
            username =  this.username;
            password =  this.password;
+           xlxName = username.Text;
+           xlxPassword = password.Text;
 
             //检查输入框不能为空
-            if (username.Text == "")
+           if (xlxName == "")
             {
                 MessageBox.Show("请输入用户名");
                 username.Focus();
                 return;
             }
-            if (password.Text == "")
+           if (xlxPassword == "")
             {
                 MessageBox.Show("请输入密码");
                 password.Focus();
@@ -47,7 +57,7 @@ namespace WindowsFormsApplication1
                 //1.发送请求
             try
             {
-                string param = "UserCode=" + username.Text + "&ip=&pcName=&area=&UserPwd=" + password.Text + "&X-Requested-With=XMLHttpRequest";
+                string param = "UserCode=" + xlxName + "&ip=&pcName=&area=&UserPwd=" + xlxPassword + "&X-Requested-With=XMLHttpRequest";
                 byte[] bs = Encoding.ASCII.GetBytes(param);
                 HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create("http://61.163.55.55:10026/Login/UserLogin");
                 req.Method = "POST";
@@ -68,23 +78,30 @@ namespace WindowsFormsApplication1
                         StreamReader respStreamReader = new StreamReader(respStream, Encoding.UTF8);
                         string strBuff = respStreamReader.ReadToEnd();
                         //处理JSON字符串
-                        Dictionary<String, String> pList = new Dictionary<String, String>();
-                        //JSON.parse<List<Dictionary<String, String>>>(strBuff);
-
-
-
-
-
-
-                        System.Console.WriteLine(JSON.parse<List<Dictionary<String, String>>>(strBuff));
-                        //MessageBox.Show(strBuff);
-
+                        JObject messageModel = (JObject)JsonConvert.DeserializeObject(strBuff);
+                        string message = (string)messageModel["model"];
+                        //ok 和 false两种
+                        string result = (string)messageModel["result"];
+                        //显示登录结果
+                        MessageBox.Show(message);
+                        //登录成功进行跳转
+                        if (result == "ok") { 
+                           //拿出sessionID
+                                string cookies = wr.Headers["Set-Cookie"];
+                                //处理字符串
+                                string[] resultString = Regex.Split(cookies, ";", RegexOptions.IgnoreCase);
+                                //存储sessionID
+                                sessionID = resultString[0];
+                           
+                           //进行登陆后的页面跳转
+                                operateForm operatePage = new operateForm();
+                                operatePage.Show();
+                                this.Hide();
+                        }
                     }
 
-                    
-                    
-                }
-            }
+                }//using
+            }//try
             catch (WebException exception)
             {
                 System.Console.WriteLine(exception.Status);
@@ -92,31 +109,6 @@ namespace WindowsFormsApplication1
             catch (Exception exception) {
                 System.Console.WriteLine(exception.Message);
             }
-
-
         }
     }
-
-    //专门解析JSON的类
-    public static class JSON
-    {
-
-        public static T parse<T>(string jsonString)
-        {
-            using (var ms = new MemoryStream(Encoding.UTF8.GetBytes(jsonString)))
-            {
-                return (T)new DataContractJsonSerializer(typeof(T)).ReadObject(ms);
-            }
-        }
-
-        public static string stringify(object jsonObject)
-        {
-            using (var ms = new MemoryStream())
-            {
-                new DataContractJsonSerializer(jsonObject.GetType()).WriteObject(ms, jsonObject);
-                return Encoding.UTF8.GetString(ms.ToArray());
-            }
-        }
-    } 
-
 }

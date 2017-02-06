@@ -70,6 +70,7 @@
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(143, 21);
             this.username.TabIndex = 3;
+            this.username.Text = "SU411832";
             // 
             // password
             // 
@@ -78,6 +79,7 @@
             this.password.PasswordChar = '*';
             this.password.Size = new System.Drawing.Size(143, 21);
             this.password.TabIndex = 4;
+            this.password.Text = "xlx123";
             // 
             // label3
             // 
