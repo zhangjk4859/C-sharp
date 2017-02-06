@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory />
-    <InstallUrlHistory />
+    <PublishUrlHistory>\\Mac\Home\Desktop\xlxSystem\|\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心供应系统\</PublishUrlHistory>
+    <InstallUrlHistory>\\Mac\Home\Desktop\xlxSystem\|\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心供应系统\</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />
