@@ -11,3 +11,7 @@
 \\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\bin\Debug\Newtonsoft.Json.pdb
 \\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\bin\Debug\Newtonsoft.Json.xml
 \\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\obj\Debug\WindowsFormsApplication1.operateForm.resources
+\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\bin\Debug\心连心登录.exe.manifest
+\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\bin\Debug\心连心登录.application
+\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\obj\Debug\心连心登录.exe.manifest
+\\Mac\Home\Desktop\个人代码仓库\C-sharp\心连心登录\心连心登录\obj\Debug\心连心登录.application
