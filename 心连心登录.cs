@@ -26,6 +26,7 @@ namespace WindowsFormsApplication1
         public static string sessionID;
         public static string xlxName;
         public static string xlxPassword;
+        public CookieContainer cookieContainer;
         public Form1()
         {
             InitializeComponent();
@@ -60,12 +61,15 @@ namespace WindowsFormsApplication1
                 string param = "UserCode=" + xlxName + "&ip=&pcName=&area=&UserPwd=" + xlxPassword + "&X-Requested-With=XMLHttpRequest";
                 byte[] bs = Encoding.ASCII.GetBytes(param);
                 HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create("http://61.163.55.55:10026/Login/UserLogin");
+                cookieContainer = new CookieContainer();
                 req.Method = "POST";
                 req.ContentType = "application/x-www-form-urlencoded";
                 req.ContentLength = bs.Length;
+                req.CookieContainer = cookieContainer;
                 using (Stream reqStream = req.GetRequestStream())
                 {
                     reqStream.Write(bs, 0, bs.Length);
+                    reqStream.Close();
                 }
                 //2.处理返回的请求
                 using (HttpWebResponse wr = (HttpWebResponse)req.GetResponse())
@@ -86,17 +90,14 @@ namespace WindowsFormsApplication1
                         MessageBox.Show(message);
                         //登录成功进行跳转
                         if (result == "ok") { 
-                           //拿出sessionID
-                                string cookies = wr.Headers["Set-Cookie"];
-                                //处理字符串
-                                string[] resultString = Regex.Split(cookies, ";", RegexOptions.IgnoreCase);
-                                //存储sessionID
-                                sessionID = resultString[0];
-                           
+                          
                            //进行登陆后的页面跳转
                                 operateForm operatePage = new operateForm();
-                                operatePage.Show();
+                                //传递cookie参数
+                                operatePage.cookieContainer = this.cookieContainer;
+                                operatePage.ShowDialog();
                                 this.Hide();
+                                this.Dispose();
                         }
                     }
 
@@ -110,5 +111,18 @@ namespace WindowsFormsApplication1
                 System.Console.WriteLine(exception.Message);
             }
         }
+
+        //备用代码
+        private void extraCode()
+        {
+            //string cookies = wr.Headers["Set-Cookie"];
+            ////处理字符串
+            //string[] resultString = Regex.Split(cookies, ";", RegexOptions.IgnoreCase);
+            ////存储sessionID
+            //sessionID = resultString[0];
+        }
+
     }
+
+  
 }

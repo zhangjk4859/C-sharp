@@ -50,6 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JavaScriptSerializer.cs" />
+    <Compile Include="List.cs" />
     <Compile Include="operateForm.cs">
       <SubType>Form</SubType>
     </Compile>

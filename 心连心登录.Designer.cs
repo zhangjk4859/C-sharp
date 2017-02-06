@@ -88,7 +88,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(119, 12);
             this.label3.TabIndex = 5;
-            this.label3.Text = "心连心CRM客户端系统";
+            this.label3.Text = "心连心SRM客户端系统";
             // 
             // Form1
             // 
