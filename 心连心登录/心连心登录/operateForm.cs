@@ -248,30 +248,47 @@ namespace WindowsFormsApplication1
             }
 
         }
+        //生成查询条件方法
+        private string getQueryString() {
+
+            return "BillDate like '%" + textBox1.Text.Trim() + "%'"
+                + "and DeliveryNoticeCode like '%" + textBox2.Text.Trim() + "%'"
+                + "and MaterialCode like '%" + textBox3.Text.Trim() + "%'"
+                + "and MaterialName like '%" + textBox4.Text.Trim() + "%'"
+                + "and Model like '%" + textBox5.Text.Trim() + "%'";
+        }
         //查询框查询数据
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            dataTable.DefaultView.RowFilter = "BillDate like '%" + textBox1.Text.Trim() + "%'";
+            //dataTable.DefaultView.RowFilter = getQueryString();
+
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            dataTable.DefaultView.RowFilter = "DeliveryNoticeCode like '%" + textBox2.Text.Trim() + "%'";
+            //dataTable.DefaultView.RowFilter = getQueryString();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            dataTable.DefaultView.RowFilter = "MaterialCode like '%" + textBox3.Text.Trim() + "%'";
+            //dataTable.DefaultView.RowFilter = getQueryString();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            dataTable.DefaultView.RowFilter = "MaterialName like '%" + textBox4.Text.Trim() + "%'";
+            //dataTable.DefaultView.RowFilter = getQueryString();
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            dataTable.DefaultView.RowFilter = "Model like '%" + textBox5.Text.Trim() + "%'";
+            //dataTable.DefaultView.RowFilter = getQueryString();
         }
+
+        //查询按钮
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dataTable.DefaultView.RowFilter = getQueryString();
+        } 
 
         //dataGridView1 显示行数
         private void dataGridView1_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
@@ -434,7 +451,9 @@ namespace WindowsFormsApplication1
             }
             MessageBox.Show(fileNameString + "/n/n导出完毕! ", "提示 ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-        }    
+        }
+
+            
 
     }//class
 }//namespace

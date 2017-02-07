@@ -16,7 +16,24 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            Form1 login = new Form1();
+            login.ShowDialog();
+
+            if (login.DialogResult == DialogResult.OK)
+            {
+                operateForm operatePage = new operateForm();
+                //传递cookie参数
+                operatePage.cookieContainer = login.cookieContainer;
+
+                Application.Run(operatePage);
+            }
+            else
+            {
+                return;
+            }
+            
+            
         }
     }
 }

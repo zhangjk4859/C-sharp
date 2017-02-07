@@ -92,12 +92,10 @@ namespace WindowsFormsApplication1
                         if (result == "ok") { 
                           
                            //进行登陆后的页面跳转
-                                operateForm operatePage = new operateForm();
-                                //传递cookie参数
-                                operatePage.cookieContainer = this.cookieContainer;
-                                operatePage.ShowDialog();
-                                this.Hide();
-                                this.Dispose();
+                                this.DialogResult = DialogResult.OK;
+                                this.Close();
+                                 
+                                
                         }
                     }
 
