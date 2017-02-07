@@ -66,10 +66,11 @@
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1161, 12);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Location = new System.Drawing.Point(1155, 28);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 36);
+            this.button1.Size = new System.Drawing.Size(216, 29);
             this.button1.TabIndex = 1;
             this.button1.Text = "点击显示所有发货通知单";
             this.button1.UseVisualStyleBackColor = true;
@@ -77,8 +78,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox1.Location = new System.Drawing.Point(1155, 108);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(216, 21);
@@ -87,8 +87,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(1201, 93);
             this.label1.Name = "label1";
@@ -98,8 +97,8 @@
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(1176, 481);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button2.Location = new System.Drawing.Point(1176, 426);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(165, 23);
             this.button2.TabIndex = 4;
@@ -109,8 +108,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox2.Location = new System.Drawing.Point(1155, 154);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(216, 21);
@@ -119,8 +117,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox3.Location = new System.Drawing.Point(1155, 202);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(216, 21);
@@ -129,8 +126,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox4.Location = new System.Drawing.Point(1155, 252);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(216, 21);
@@ -139,8 +135,7 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(1096, 117);
             this.label2.Name = "label2";
@@ -150,8 +145,7 @@
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(1084, 157);
             this.label3.Name = "label3";
@@ -161,8 +155,7 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(1096, 205);
             this.label4.Name = "label4";
@@ -172,8 +165,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(1096, 255);
             this.label5.Name = "label5";
@@ -183,8 +175,7 @@
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(1096, 300);
             this.label6.Name = "label6";
@@ -194,8 +185,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox5.Location = new System.Drawing.Point(1155, 297);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(216, 21);
@@ -204,7 +194,7 @@
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button3.Location = new System.Drawing.Point(1277, 334);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
@@ -215,7 +205,7 @@
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button4.Location = new System.Drawing.Point(1176, 334);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
@@ -226,7 +216,7 @@
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(1174, 374);
             this.label7.Name = "label7";
@@ -235,8 +225,7 @@
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(1096, 374);
             this.label8.Name = "label8";
