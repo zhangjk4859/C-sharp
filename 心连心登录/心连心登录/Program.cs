@@ -17,11 +17,14 @@ namespace WindowsFormsApplication1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            //先显示登录窗口
             Form1 login = new Form1();
             login.ShowDialog();
 
+            //登录窗口成功
             if (login.DialogResult == DialogResult.OK)
             {
+                //切换到主界面
                 operateForm operatePage = new operateForm();
                 //传递cookie参数
                 operatePage.cookieContainer = login.cookieContainer;

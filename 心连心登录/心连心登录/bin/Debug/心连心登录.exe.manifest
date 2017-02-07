@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="心连心登录.exe" size="26112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="心连心登录.exe" size="28160">
       <assemblyIdentity name="心连心登录" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rXILc6244DbVJ5V7IFZfupG95VOGDk5jOlETaB0bozc=</dsig:DigestValue>
+        <dsig:DigestValue>HKz26NQqI/p4Tub3CSmDo8N30EwA5nY4eUI8OYx2FwU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

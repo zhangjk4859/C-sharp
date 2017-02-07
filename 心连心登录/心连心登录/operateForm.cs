@@ -31,8 +31,23 @@ namespace WindowsFormsApplication1
 
         private void operateForm_Load(object sender, EventArgs e)
         {
-            
+            this.Text = "心连心SRM系统";
         }
+
+         //关闭窗口确认
+        private void operateForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("您确认退出吗？", "版权归属：王钰瑾", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            {
+                this.Dispose();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+  
 
       
 
@@ -287,8 +302,31 @@ namespace WindowsFormsApplication1
         //查询按钮
         private void button3_Click(object sender, EventArgs e)
         {
-            dataTable.DefaultView.RowFilter = getQueryString();
-        } 
+            //dataTable有数据才能查询
+            if (dataTable != null)
+            {
+                dataTable.DefaultView.RowFilter = getQueryString();
+                label7.Text = dataTable.DefaultView.Count.ToString().Trim() + " 条结果符合条件";
+            }
+        }
+        //显示全部结果，清空rowFilter
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ////dataTable有数据才能查询
+            //if (dataTable != null)
+            //{
+            //    dataTable.DefaultView.RowFilter = "";
+            //    label7.Text = "一共" + dataTable.DefaultView.Count.ToString().Trim() + "条数据";
+            //}
+
+            //清除所有的textBox的数据
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+
+        }
 
         //dataGridView1 显示行数
         private void dataGridView1_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
@@ -452,6 +490,12 @@ namespace WindowsFormsApplication1
             MessageBox.Show(fileNameString + "/n/n导出完毕! ", "提示 ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
+
+      
+
+         
+
+        
 
             
 
