@@ -1,0 +1,48 @@
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wanfeng\wanfeng\bin\Debug\wanfeng.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wanfeng\wanfeng\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wanfeng\wanfeng\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wanfeng\wanfeng\obj\Debug\wanfeng.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wanfeng\wanfeng\bin\Debug\wanfeng.exe
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wanfeng\wanfeng\bin\Debug\wanfeng.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wanfeng\wanfeng\bin\Debug\wanfeng.xml
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wanfeng\wanfeng\obj\Debug\wanfeng.exe
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wanfeng\wanfeng\obj\Debug\wanfeng.xml
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wanfeng\wanfeng\obj\Debug\wanfeng.pdb
+F:\潘梁梁\连接oracle\wanfeng\bin\Debug\wanfeng.exe.config
+F:\潘梁梁\连接oracle\wanfeng\obj\Debug\wanfeng.exe
+F:\潘梁梁\连接oracle\wanfeng\obj\Debug\wanfeng.xml
+F:\潘梁梁\连接oracle\wanfeng\obj\Debug\wanfeng.pdb
+F:\潘梁梁\连接oracle\wanfeng\bin\Debug\wanfeng.exe
+F:\潘梁梁\连接oracle\wanfeng\bin\Debug\wanfeng.pdb
+F:\潘梁梁\连接oracle\wanfeng\bin\Debug\wanfeng.xml
+F:\潘梁梁\连接oracle\wanfeng\obj\Debug\WindowsApplication1.Form1.resources
+F:\潘梁梁\连接oracle\wanfeng\obj\Debug\WindowsApplication1.Resources.resources
+F:\潘梁梁\连接oracle\wanfeng\obj\Debug\wanfeng.vbproj.GenerateResource.Cache
+F:\潘梁梁\TGP GP查询品号\wanfeng\bin\Debug\wanfeng.exe.config
+F:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.exe
+F:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.xml
+F:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.pdb
+F:\潘梁梁\TGP GP查询品号\wanfeng\bin\Debug\wanfeng.exe
+F:\潘梁梁\TGP GP查询品号\wanfeng\bin\Debug\wanfeng.pdb
+F:\潘梁梁\TGP GP查询品号\wanfeng\bin\Debug\wanfeng.xml
+F:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\WindowsApplication1.Form1.resources
+F:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\WindowsApplication1.Resources.resources
+F:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\WindowsApplication1.查询品号.resources
+F:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.vbproj.GenerateResource.Cache
+F:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.vbprojResolveAssemblyReference.cache
+H:\潘梁梁\TGP GP查询品号\wanfeng\bin\Debug\wanfeng.exe.config
+H:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.exe
+H:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.xml
+H:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.pdb
+H:\潘梁梁\TGP GP查询品号\wanfeng\bin\Debug\wanfeng.exe
+H:\潘梁梁\TGP GP查询品号\wanfeng\bin\Debug\wanfeng.pdb
+H:\潘梁梁\TGP GP查询品号\wanfeng\bin\Debug\wanfeng.xml
+H:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.vbprojResolveAssemblyReference.cache
+H:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\WindowsApplication1.Form1.resources
+H:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\WindowsApplication1.Resources.resources
+H:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\WindowsApplication1.查询品号.resources
+H:\潘梁梁\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.vbproj.GenerateResource.Cache
+\\Mac\Home\Desktop\TGP GP查询品号\wanfeng\bin\Debug\wanfeng.exe.config
+\\Mac\Home\Desktop\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.exe
+\\Mac\Home\Desktop\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.xml
+\\Mac\Home\Desktop\TGP GP查询品号\wanfeng\obj\Debug\wanfeng.pdb
